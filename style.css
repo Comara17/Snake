@@ -1,43 +1,69 @@
 html body {
-    background-image: linear-gradient(to bottom right, #eee,rgb(176, 216, 248));
-    height: 100%;
-    height: 100vh;
-    font-family: 'Oswald', sans-serif;
+  background-image: linear-gradient(to bottom right, #eee, rgb(176, 216, 248));
+  height: 100%;
+  height: 100vh;
+  font-family: "Oswald", sans-serif;
+  display: flex;
 }
 
 .container {
-    width: 390px;
-    height: 60vh;
-    margin: auto;
-    margin-top: 100px;
-    box-shadow: 10px 5px 5px #666;
-    border-radius: 10px;
-
+  margin: auto;
+  width: 50vh;
+  height: 50vh;
+  box-shadow: 10px 5px 5px #666;
+  border-radius: 10px;
 }
 
 #score-card {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    background: #2f3c65;
-    height: 40px;
-    color: #ddd;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  background: #2f3c65;
+  height: 10%;
+  color: #ddd;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
-#game-window {
-    display: grid;
-    grid-template-columns: repeat(25, 1fr);
-    grid-template-rows: repeat(25, 1fr);
-    background: #151b2e;
-    height: 390px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(25, 1fr);
+  grid-template-rows: repeat(25, 1fr);
+  background: #151b2e;
+  height: 45vh;
 }
 
-#square {
-    background: red;
+.target {
+  background: rgb(251, 78, 78);
+  border-radius: 4px;
 }
 
-#snake {
-    background-color: aqua;
+.snake {
+  background-color: darkseagreen;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#start {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  width: 70px;
+  margin-right: 10px;
+}
+
+#end {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  width: 70px;
+  margin-left: 10px;
+}
+
+#message {
+  margin-right: 10px;
 }

@@ -16,11 +16,16 @@
   </head>
   <body>
     <div class="container">
-      <div id="score-card">&nbsp;&nbsp;Score:</div>
-      <div id="game-window">
-
-
-    </div>
+      <div id="score-card">
+        <div class="score">
+          &nbsp;&nbsp;Score:&nbsp;<span id="score"></span>
+        </div>
+        <div id="message"></div>
+      </div>
+      <div class="grid"></div>
+      <div class="buttons">
+        <button id="start">Start</button><button id="end">End</button>
+      </div>
     </div>
 
     <script src="app.js" async defer></script>
